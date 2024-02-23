@@ -39,9 +39,9 @@ const Advert = () => {
     updateDisplayedImages();
 
     // Set interval to update the displayed images every 60 seconds
-    const intervalId = setInterval(updateDisplayedImages, 60000);
+    const intervalId = setInterval(updateDisplayedImages, 20000);
 
-    // Cleanup function to clear interval on component unmount
+    // Cleanup function to clear interval on component unmount xcv 
     return () => clearInterval(intervalId);
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
