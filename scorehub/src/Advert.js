@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Advert = () => {
   const imageUrls = [
-    'images/ad.png',
+    'images/ad1.png',
     'images/ad2.png',
     'images/ad3.png',
     'images/ad5.png',
