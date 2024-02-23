@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Advert = () => {
   const imageUrls = [
-    'images/ad1.png',
+    'images/ad.png',
     'images/ad2.png',
     'images/ad3.png',
     'images/ad5.png',
@@ -39,9 +39,9 @@ const Advert = () => {
     updateDisplayedImages();
 
     // Set interval to update the displayed images every 60 seconds
-    const intervalId = setInterval(updateDisplayedImages, 20000);
+    const intervalId = setInterval(updateDisplayedImages, 60000);
 
-    // Cleanup function to clear interval on component unmount xcv 
+    // Cleanup function to clear interval on component unmount
     return () => clearInterval(intervalId);
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
