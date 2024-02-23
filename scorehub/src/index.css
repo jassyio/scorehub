@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  background-color: #444; /* Darker background color */
+  font-family: Arial, sans-serif; /* Classic font */
+  color: #eee; /* Main text color */
+  position: relative;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #eee; /* Lighter header text color */
+  margin-bottom: 10px;
+}
+
+/* Container styles */
+.matches-container,
+.news-container,
+.teams-container,
+.table-container,
+.fixtures-container {
+  background-color: #666; /* Darker background for containers */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add some space between containers */
+}
+
+/* Headings */
+.matches-heading,
+.news-heading,
+.teams-heading,
+.table-heading,
+.fixtures-heading {
+  font-size: 24px;
+  color: #eb8806; /* Highlighted header text color */
+  margin-bottom: 20px;
+}
+
+/* Card styles */
+.match-card,
+.news-card,
+.fixture-card {
+  background-color: #777; /* Darker background for cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add some space between cards */
+}
+
+/* Team details */
+.teams {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  font-weight: bold;
+  color: #2b0fcc; /* Highlighted team name color */
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+/* Fixture details */
+.fixture-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  color: #eb8806; /* Highlighted date color */
+}
+
+.venue {
+  color: #2b0fcc; /* Highlighted venue color */
+  font-weight: bold;
+}
+
+/* Table styles */
+.premier-league-table,
+.teams-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.premier-league-table th,
+.premier-league-table td,
+.teams-table th,
+.teams-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Even row style */
+.even-row {
+  background-color: #555; /* Alternate row background color */
+}
+
+/* Hover effect for odd rows */
+.odd-row:hover {
+  background-color: #777; /* Hover background color */
+}
+/* Styling for the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #444; /* Dark background color */
+  color: white;
+}
+
+/* Styling for the website name */
+.website-name {
+  font-size: 3.5rem;
+  font-family: 'Blackletter', fantasy; /* Blackletter font */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #c2e71d; /* Light green color */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: emergeAnimation 2s forwards; /* Animation to emerge from the right side */
+}
+
+/* Animation for the website name */
+@keyframes emergeAnimation {
+  from {
+    transform: translateX(100%); /* Start off the screen on the right */
+  }
+  to {
+    transform: translateX(0%); /* Move to the left end */
+  }
+}
+
+/* Styling for the menu */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #444;
+  padding: 10px;
+}
+
+/* Styling for menu items */
+.menu-item {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  background-color: #666; /* Darker background for menu items */
+  border-radius: 20px; /* Rounded corners */
+  font-family: 'Arial Black', sans-serif; /* Fancy font */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+.menu-item:hover {
+  background-color: #eb8806; /* Orange background on hover */
+  color: #444; /* Darker text color on hover */
+}
+
+/* Styling for the body */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Styling for the advertisement */
+.advert {
+  height: 20vh;
+  background-color: #d7ddd7; /* Warm background color */
+  margin-bottom: 10px;
+  padding-top: 0.5%;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #1f74ad;
+  color: white;
+  padding-top: 1px;
+  margin-top: 1px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Set width to 100% */
+  height: 3vh;
+}
+
+
+.blank {
+   /* Set the height to 5% of the viewport height */
+  background-color: #04464b; /* Cool background color */
+  position: relative; /* Add relative positioning */
+  overflow: hidden; /* Hide overflow */
+  padding-bottom: 0.5%;
+}
+
+.filter {
+  height: 5vh; /* Set the height to 5% of the viewport height */
+  background-color: #87ceeb; /* Cool background color */
+  padding: 5px;
+}
+
+.advert-container {
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.advert-container img {
+  width: 25%; /* Adjust the width as needed */
+  height: 20vh; /* Maintain aspect ratio */
+  padding: 0%;
+}
+
+/* Add this to the end of your CSS file */
+.animation-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-container {
+  white-space: nowrap;
+  animation: marqueeAnimation 23s linear infinite; /* Adjust timing as needed */
+}
+
+.marquee-item {
+  display: inline-block;
+  padding-right: 20px; /* Adjust spacing */
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(-100%); /* Start position off-screen right */
+  }
+  100% {
+    transform: translateX(100%); /* End position off-screen left */
+  }
+}
