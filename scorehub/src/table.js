@@ -9,7 +9,7 @@ const Table = ({ selectedLeague }) => {
     // Fetch standings data from the backend when the component mounts and when the selected league changes
     const fetchStandings = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/scorehub/standings/${selectedLeague}`);
+        const response = await axios.get(`https://your-backend-url.vercel.app/scorehub/standings/${selectedLeague}`);
         setStandings(response.data);
       } catch (error) {
         console.error('Error fetching standings data:', error);
@@ -40,19 +40,18 @@ const Table = ({ selectedLeague }) => {
           </tr>
         </thead>
         <tbody>
-  {standings.map((team, index) => (
-    <tr key={team.team_id} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
-      <td>{index + 1}</td>
-      <td>{team.team_name}</td>
-      <td>{team.matches_played}</td>
-      <td>{team.won}</td>
-      <td>{team.drawn}</td>
-      <td>{team.lost}</td>
-      <td>{team.points}</td>
-    </tr>
-  ))}
-</tbody>
-
+          {standings.map((team, index) => (
+            <tr key={team.team_id} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
+              <td>{index + 1}</td>
+              <td>{team.team_name}</td>
+              <td>{team.matches_played}</td>
+              <td>{team.won}</td>
+              <td>{team.drawn}</td>
+              <td>{team.lost}</td>
+              <td>{team.points}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
